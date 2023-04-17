@@ -1,3 +1,6 @@
+echo -e "\e[36m>>>>>>>>> Switch to Root User <<<<<<<<<<<\e[0m"
+sudo -i
+
 echo -e "\e[36m>>>>>>>>> Install Nginx <<<<<<<<<<<\e[0m"
 yum install nginx -y 
 
