@@ -1,12 +1,9 @@
-echo -e "\e[36m>>>>>>>>> Switch to Root User <<<<<<<<<<<\e[0m"
-sudo -i
-
 echo -e "\e[36m>>>>>>>>> Install Nginx <<<<<<<<<<<\e[0m"
-yum install nginx -y 
+sudo yum install nginx -y 
 
 echo -e "\e[36m>>>>>>>>> Start Nginx <<<<<<<<<<<\e[0m"
-systemctl enable nginx 
-systemctl start nginx 
+sudo systemctl enable nginx 
+sudo Ssystemctl start nginx 
 
 echo -e "\e[36m>>>>>>>>> Empty the HTML Location <<<<<<<<<<<\e[0m"
 rm -rf /usr/share/nginx/html/* 
