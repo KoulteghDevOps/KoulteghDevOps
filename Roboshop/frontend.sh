@@ -1,5 +1,5 @@
 echo -e "\e[36m>>>>>>>>> Install Nginx <<<<<<<<<<<\e[0m"
-yum install nginx -y 
+dnf install nginx -y 
 
 echo -e "\e[36m>>>>>>>>> Empty the HTML Location <<<<<<<<<<<\e[0m"
 rm -rf /usr/share/nginx/html/* 
