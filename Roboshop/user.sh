@@ -1,17 +1,21 @@
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
+cp user.service /etc/systemd/system/user.service
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 useradd roboshop
 mkdir /app 
-curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip 
+curl -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip 
 cd /app 
 unzip /tmp/user.zip
-cd /app 
+# cd /app 
 npm install 
-cp catalogue.service /etc/systemd/system/user.service
+# cp user.service /etc/systemd/system/user.service
 systemctl daemon-reload
-systemctl enable user 
-systemctl start user
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+# systemctl enable user 
+# systemctl start user
+# cp mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb-dev.gilbraltar.co.uk </app/schema/user.js
-systemctl restart user
+# systemctl restart user
+systemctl enable user 
+systemctl start user
