@@ -30,7 +30,7 @@ unzip /tmp/cart.zip
 echo -e "\e[36m>>>>>>>>> Install Cart Dependencies <<<<<<<<<\e[0m"
 npm install 
 
-# cp catalogue.service /etc/systemd/system/cart.service
+# cp /home/centos/KoulteghDevOps/Roboshop/catalogue.service /etc/systemd/system/cart.service
 
 echo -e "\e[36m>>>>>>>>> Start Cart Service <<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -45,7 +45,7 @@ echo -e "\e[36m>>>>>>>>> Install Nodejs <<<<<<<<<\e[0m"
 yum install nodejs -y
 
 # echo -e "\e[36m>>>>>>>>> Copy Catalogue System File <<<<<<<<<\e[0m"
-# cp catalogue.service /etc/systemd/system/catalogue.service
+# cp /home/centos/KoulteghDevOps/Roboshop/catalogue.service /etc/systemd/system/catalogue.service
 
 # echo -e "\e[36m>>>>>>>>> Copy Mongo Repo File <<<<<<<<<\e[0m"
 # cp mongo.repo /etc/yum.repos.d/mongo.repo
@@ -69,7 +69,7 @@ echo -e "\e[36m>>>>>>>>> Install NodeJS Dependencies <<<<<<<<<\e[0m"
 npm install 
 
 echo -e "\e[36m>>>>>>>>> Copy Catalogue System File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/catalogue.service /etc/systemd/system/catalogue.service
+cp /home/centos/KoulteghDevOps/Roboshop/catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[36m>>>>>>>>> Start Catalogue Service <<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -77,7 +77,7 @@ systemctl enable catalogue
 systemctl start catalogue
 
 echo -e "\e[36m>>>>>>>>> Copy Mongo Repo File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Install Mongo Shell <<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
@@ -94,7 +94,7 @@ echo -e "\e[36m>>>>>>>>> Install Nginx <<<<<<<<<<<\e[0m"
 dnf install nginx -y 
 
 echo -e "\e[36m>>>>>>>>> Copy App Config File <<<<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/KoulteghDevOps/Roboshop/roboshop.conf /etc/nginx/default.d/roboshop.conf
 # cp roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 echo -e "\e[36m>>>>>>>>> Empty the HTML Location <<<<<<<<<<<\e[0m"
@@ -141,7 +141,7 @@ go build
 
 echo -e "\e[36m>>>>>>>>> Copy Dispatch Service File <<<<<<<<<\e[0m"
 # cp dispatch.service /etc/systemd/system/dispatch.service
-cp /home/centos/KoulteghDevOps/dispatch.service /etc/systemd/system/dispatch.service
+cp /home/centos/KoulteghDevOps/Roboshop/dispatch.service /etc/systemd/system/dispatch.service
 
 echo -e "\e[36m>>>>>>>>> Start Dispatch Service <<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -151,7 +151,7 @@ systemctl start dispatch
 MONGODB
 -------
 echo -e "\e[36m>>>>>>>>> Copy Mongo Repo <<<<<<<<<\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Install MongoDB <<<<<<<<<\e[0m"
 yum install mongodb-org -y 
@@ -172,7 +172,7 @@ echo -e "\e[36m>>>>>>>>> Disable MySQL 8 Version <<<<<<<<<\e[0m"
 dnf module disable mysql -y 
 
 echo -e "\e[36m>>>>>>>>> Copy MySQL Repo File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/mysql.repo /etc/yum.repos.d/mysql.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mysql.repo /etc/yum.repos.d/mysql.repo
 
 echo -e "\e[36m>>>>>>>>> Install MySQL <<<<<<<<<\e[0m"
 yum install mysql-community-server -y
@@ -209,7 +209,7 @@ echo -e "\e[36m>>>>>>>>> Install Python Dependencies <<<<<<<<<\e[0m"
 pip3.6 install -r requirements.txt
 
 echo -e "\e[36m>>>>>>>>> Copy Payment Service File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/payment.service /etc/systemd/system/payment.service
+cp /home/centos/KoulteghDevOps/Roboshop/payment.service /etc/systemd/system/payment.service
 # cp payment.service /etc/systemd/system/payment.service
 
 echo -e "\e[36m>>>>>>>>> Start Payment Service <<<<<<<<<\e[0m"
@@ -285,7 +285,7 @@ echo -e "\e[36m>>>>>>>>> Move Sippinig Jars to New Location <<<<<<<<<\e[0m"
 mv target/shipping-1.0.jar shipping.jar 
 
 echo -e "\e[36m>>>>>>>>> Copy Shipping File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/shipping.service /etc/systemd/system/shipping.service
+cp /home/centos/KoulteghDevOps/Roboshop/shipping.service /etc/systemd/system/shipping.service
 # cp shipping.service /etc/systemd/system/shipping.service
 
 echo -e "\e[36m>>>>>>>>> Start Shipping Service <<<<<<<<<\e[0m"
@@ -336,7 +336,7 @@ echo -e "\e[36m>>>>>>>>> Install User Dependencies <<<<<<<<<\e[0m"
 npm install 
 
 echo -e "\e[36m>>>>>>>>> Copy User Service File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/user.service /etc/systemd/system/user.service
+cp /home/centos/KoulteghDevOps/Roboshop/user.service /etc/systemd/system/user.service
 
 echo -e "\e[36m>>>>>>>>> Reload Daemon <<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -344,7 +344,7 @@ systemctl daemon-reload
 # systemctl start user
 
 echo -e "\e[36m>>>>>>>>> Copy MongoDB Repo File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Installing MongoDB Shell <<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
@@ -388,7 +388,7 @@ echo -e "\e[36m>>>>>>>>> Install User Dependencies <<<<<<<<<\e[0m"
 npm install 
 
 echo -e "\e[36m>>>>>>>>> Copy User Service File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/user.service /etc/systemd/system/user.service
+cp /home/centos/KoulteghDevOps/Roboshop/user.service /etc/systemd/system/user.service
 
 echo -e "\e[36m>>>>>>>>> Reload Daemon <<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -396,7 +396,7 @@ systemctl daemon-reload
 # systemctl start user
 
 echo -e "\e[36m>>>>>>>>> Copy MongoDB Repo File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Installing MongoDB Shell <<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
