@@ -5,7 +5,8 @@ echo -e "\e[36m>>>>>>>>> Install NodeJS <<<<<<<<<\e[0m"
 yum install nodejs -y
 
 echo -e "\e[36m>>>>>>>>> Copy Cart Service File <<<<<<<<<\e[0m"
-cp cart.service /etc/systemd/system/cart.service
+cp /home/centos/KoulteghDevOps/Roboshop/cart.service /etc/systemd/system/cart.service
+# cp cart.service /etc/systemd/system/cart.service
 
 echo -e "\e[36m>>>>>>>>> Create A User <<<<<<<<<\e[0m"
 useradd roboshop

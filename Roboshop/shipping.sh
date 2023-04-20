@@ -24,7 +24,7 @@ echo -e "\e[36m>>>>>>>>> Move Sippinig Jars to New Location <<<<<<<<<\e[0m"
 mv target/shipping-1.0.jar shipping.jar 
 
 echo -e "\e[36m>>>>>>>>> Copy Shipping File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/shipping.service /etc/systemd/system/shipping.service
+cp /home/centos/KoulteghDevOps/Roboshop/shipping.service /etc/systemd/system/shipping.service
 # cp shipping.service /etc/systemd/system/shipping.service
 
 echo -e "\e[36m>>>>>>>>> Start Shipping Service <<<<<<<<<\e[0m"

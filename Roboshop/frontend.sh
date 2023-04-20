@@ -2,7 +2,7 @@ echo -e "\e[36m>>>>>>>>> Install Nginx <<<<<<<<<<<\e[0m"
 dnf install nginx -y 
 
 echo -e "\e[36m>>>>>>>>> Copy App Config File <<<<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/KoulteghDevOps/Roboshop/roboshop.conf /etc/nginx/default.d/roboshop.conf
 # cp roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 echo -e "\e[36m>>>>>>>>> Empty the HTML Location <<<<<<<<<<<\e[0m"

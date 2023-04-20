@@ -2,7 +2,7 @@ echo -e "\e[36m>>>>>>>>> Disable MySQL 8 Version <<<<<<<<<\e[0m"
 dnf module disable mysql -y 
 
 echo -e "\e[36m>>>>>>>>> Copy MySQL Repo File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/mysql.repo /etc/yum.repos.d/mysql.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mysql.repo /etc/yum.repos.d/mysql.repo
 
 echo -e "\e[36m>>>>>>>>> Install MySQL <<<<<<<<<\e[0m"
 yum install mysql-community-server -y

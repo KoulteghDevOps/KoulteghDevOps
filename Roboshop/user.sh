@@ -30,7 +30,7 @@ echo -e "\e[36m>>>>>>>>> Install User Dependencies <<<<<<<<<\e[0m"
 npm install 
 
 echo -e "\e[36m>>>>>>>>> Copy User Service File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/user.service /etc/systemd/system/user.service
+cp /home/centos/KoulteghDevOps/Roboshop/user.service /etc/systemd/system/user.service
 
 echo -e "\e[36m>>>>>>>>> Reload Daemon <<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -38,7 +38,7 @@ systemctl daemon-reload
 # systemctl start user
 
 echo -e "\e[36m>>>>>>>>> Copy MongoDB Repo File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/KoulteghDevOps/Roboshop/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Installing MongoDB Shell <<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y

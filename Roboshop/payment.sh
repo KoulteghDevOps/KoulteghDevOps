@@ -20,7 +20,7 @@ echo -e "\e[36m>>>>>>>>> Install Python Dependencies <<<<<<<<<\e[0m"
 pip3.6 install -r requirements.txt
 
 echo -e "\e[36m>>>>>>>>> Copy Payment Service File <<<<<<<<<\e[0m"
-cp /home/centos/KoulteghDevOps/payment.service /etc/systemd/system/payment.service
+cp /home/centos/KoulteghDevOps/Roboshop/payment.service /etc/systemd/system/payment.service
 # cp payment.service /etc/systemd/system/payment.service
 
 echo -e "\e[36m>>>>>>>>> Start Payment Service <<<<<<<<<\e[0m"

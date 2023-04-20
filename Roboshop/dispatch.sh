@@ -24,7 +24,7 @@ go build
 
 echo -e "\e[36m>>>>>>>>> Copy Dispatch Service File <<<<<<<<<\e[0m"
 # cp dispatch.service /etc/systemd/system/dispatch.service
-cp /home/centos/KoulteghDevOps/dispatch.service /etc/systemd/system/dispatch.service
+cp /home/centos/KoulteghDevOps/Roboshop/dispatch.service /etc/systemd/system/dispatch.service
 
 echo -e "\e[36m>>>>>>>>> Start Dispatch Service <<<<<<<<<\e[0m"
 systemctl daemon-reload
